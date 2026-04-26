@@ -1,0 +1,30 @@
+{
+  "name": "learn-react",
+  "version": "1.0.0",
+  "description": "This is namaste react learning project",
+  "keywords": [
+    "namaste-react"
+  ],
+  "homepage": "https://github.com/Vishnu5789/react#readme",
+  "bugs": {
+    "url": "https://github.com/Vishnu5789/react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vishnu5789/react.git"
+  },
+  "license": "ISC",
+  "author": "Vishnu",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "browserslist":["last 2 versions"]
+}

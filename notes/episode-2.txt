@@ -1,0 +1,132 @@
+In this episode, he stared with github -- how tonpush, how to commit , what is github
+
+now episode 2 related to ignite the app. 
+
+what is ignite:- 
+ -- Till now we have written code using html css 
+ -- Now we are going to create an react app
+ -- 
+
+ How to create own react production react app
+    - npm init -- It will configure the npm in our package.
+    - now start the installing packages 
+    - most imp package is bundler, bundler is very useful for bundle and packages our app perfectly for production , when we use the create react app it will use the bundler behind the scences
+    - webpack, vite, parcel is the different bundlers
+    - we will use the parcle, which is easy to configure, parcle will give muscles and strengs to our app.
+    - now we will instal parcle into our app using   " npm install -D parcel"  , what is this -D -- There are 2 types of dependencies in our app one is dev dependency and one is normal dependency, what is dev dependency - 
+    dev dependencies is used in develeopment -- so exact meaning of above command is install depem=ndency in dev dependency
+    - parcle is really a beast, 
+    - now its installed the dependency and and in version we noticed ^ and ~ symbols , what are those?
+    - if u put ^ this then package will automatically upgrade this version its for minor version upgrateds, ~ for major upgrage version
+    - what is package-lock.json -- it will do keep track on exact package which is installed in project and keeps the record of that package
+    - what is node modules -- node modules contains all the code that we fetch all the code of packages
+    - cretaed the gitignore file to add the ignoed file names
+    - we no need to push the node models to github, we should push the package.json and package-lock.json should push
+    
+Part 2:- 
+ Now we are going to ingnite the app usining parcel
+
+ ** NOTE:- We neeed to remove main: App.js
+    - "npx parcel index.html" -- it will create the server and host our code There
+    - what parcel exactly do is, it will build the app from index.html and host into our server with the port 1234
+    -  as we know there is 2 ways to get the react into our app, using CDN links and another is using npm
+
+Now install or get the react using the npm ( using CDN is the good way to get the react into our app) 
+    - WHen I get the react using CDN links then it will call the react app and do the unpackage that why we no need to use those CDN links
+    - using "npm install react" we can instal the react into our app and also "npm install react-dom"
+    - Parcle Will do 
+        - Build the dev build
+        - it will do HMR = Hot mooule Replacement
+        - Parcel uses File Watching Algorithm and written in C++
+        - Which is using caching for fast building process
+        - Image Optimization
+        - Minification
+        - which will aslo do compress
+        - Consistnt hashing
+        - Code splitting
+        - Differential bundling - to support older browsers also, it will build the bundle for difffrent browsers 
+        - It can give HTTPS server also
+        - Tree Shaking algorithm -- remove un neccesary code also if that function is un used
+        - We can create the prod build and dev build also, prod build will take some time beacause it will do more minimized build, dev build no need of any optimizations
+
+        - dev build command - npx parcel index.html
+        - prod build command - npx parcel build index.html
+
+browsersLint package
+    - We need to mention to prject what all browser this app should support
+    - to configure that we need to mention in package.json
+    - using the "browserslist" :["last 2 versions] - it will take the array of objects we can use this https://browserslist.dev/?q=bGFzdCA3IHZlcnNpb25z 
+    - 
+
+
+----------------------------------
+
+
+Episode 1 Summary:
+Learned basics of GitHub
+What GitHub is
+How to:
+Commit code
+Push code
+Manage repositories
+Episode 2 Summary: Ignite the App (React Setup)
+React App Initialization:
+Traditional apps used HTML/CSS
+React requires setting up a production-ready app
+npm init initializes project configuration
+package.json manages project dependencies
+Bundlers:
+Bundlers package and optimize apps for production
+Common bundlers:
+Webpack
+Vite
+Parcel
+Parcel chosen because:
+Easy configuration
+Strong production features
+Parcel Installation:
+npm install -D parcel
+-D means dev dependency
+Dev dependencies are used only during development
+Important Files:
+package.json → project dependencies
+package-lock.json → exact package versions
+node_modules → installed package code
+.gitignore → excludes unnecessary files like node_modules
+Version Symbols:
+^ → minor updates
+~ → patch updates
+Running React App with Parcel:
+Remove:
+"main": "App.js"
+Start development server:
+npx parcel index.html
+Production build:
+npx parcel build index.html
+Installing React:
+npm install react
+npm install react-dom
+Parcel Features:
+Dev build
+Production build
+HMR (Hot Module Replacement)
+Fast caching
+File watching
+Image optimization
+Minification
+Compression
+Code splitting
+Differential bundling
+HTTPS support
+Tree shaking
+Browser Support:
+Use browserslist in package.json
+Example:
+"browserslist": ["last 2 versions"]
+Key Learnings:
+React app setup from scratch
+npm fundamentals
+Dependency management
+Parcel bundler configuration
+Development vs production builds
+Browser compatibility setup
